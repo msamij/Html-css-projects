@@ -1,0 +1,16 @@
+{
+  "name": "paradise",
+  "version": "1.0.0",
+  "description": "Hotel Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compress:css": "node-sass css/style.css css/style.comp.css --output-style compressed"
+  },
+  "author": "Muhammad Sami",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

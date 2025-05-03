@@ -1,0 +1,55 @@
+.section-about {
+  padding: 12rem 0;
+  position: relative;
+
+  @include respond(tab-land) {
+    padding: 8rem 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 1rem;
+  }
+}
+
+.section-features {
+  padding: 10rem 0;
+  background-color: $color-white-2;
+
+  @include respond(tab-land) {
+    padding: 8rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 0;
+  }
+}
+
+.section-rooms {
+  padding: 10rem 2rem;
+
+  @include respond(tab-port) {
+    padding: 8rem 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 1rem;
+  }
+}
+
+.section-plans {
+  padding: 10rem 0;
+  background-color: $color-white-2;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 8rem 0;
+  }
+}
+
+.section-stories {
+  padding: 10rem 0;
+  text-align: center;
+}

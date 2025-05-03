@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //  1rem = 10px (Default is 16 so (10 / 16) = 62.5%)
+  // This will translate to 10px.
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    // 1rem = 8px (Default is 16 so (8 / 16) = 50%)
+    font-size: 50%;
+  }
+
+  @include respond(tab-port) {
+    // 1rem = 5px (Default is 16 so (5 / 16) = 37.5%)
+    font-size: 37.5%;
+  }
+}
+
+body {
+  color: $color-grey;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+// <-------------------------------->
+// <------------TYPOGRAPHY---------->
+// <-------------------------------->
+::selection {
+  color: $color-white-1;
+  background-color: $color-secondary;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @include respond(tab-land) {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 4.9rem;
+  }
+
+  & span {
+    display: block;
+  }
+}
+
+.heading-secondary {
+  color: $color-secondary;
+  font-size: 4.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 4.8rem;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+}
+
+.paragraph {
+  color: $color-grey-dark;
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  @include respond(tab-land) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.paragraph-secondary {
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  @include respond(tab-land) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+// <------------------------------------->
+// <------------UTILITY CLASSES---------->
+// <------------------------------------->
+.u-margin-top-huge {
+  margin-top: 25rem;
+
+  @include respond(tab-land) {
+    margin-top: 10rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
+}
+
+.u-margin-top-small {
+  margin-top: 5rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 15rem;
+
+  @include respond(phone) {
+    margin-bottom: 10rem;
+  }
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 20rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 15rem;
+
+  @include respond(phone) {
+    margin-bottom: 8rem;
+  }
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 10rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 8rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 6rem;
+  }
+}
+
+.u-text-center {
+  text-align: center;
+}
+.u-text-left {
+  text-align: left;
+}

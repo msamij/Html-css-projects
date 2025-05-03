@@ -1,0 +1,43 @@
+$color-primary: #101d2c;
+$color-secondary: #c69963;
+
+$color-grey: #c0c0c0;
+$color-grey-dark: #333;
+
+$color-white-1: #f7f7f7;
+$color-white-2: #f9f9f9;
+
+$box-shadow-default: rgba(0, 0, 0, 0.2);
+$border-radius-default: 2px;
+
+$gutter-horizontal: 5rem;
+
+// <-------------------------------------->
+// <---------MEDIA QUERY MANAGER---------->
+// <-------------------------------------->
+@mixin respond($breakpoint) {
+  @if ($breakpoint == tab-land) {
+    // If device width is <= 1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tab-port) {
+    // If device width is <= 900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == phone) {
+    // If device width is <= 600px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == phone-sm) {
+    // If device width is <= 500px
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    }
+  }
+}
