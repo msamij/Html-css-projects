@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.game-title {
+  background: rgb(76, 185, 228);
+  height: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.game-menu {
+  text-align: center;
+}
+
+.game-difficulty {
+  display: inline-block;
+}
+
+main {
+  background: rgb(31, 29, 29);
+  height: 100vh;
+  text-align: center;
+}
+
+.row-1 {
+  height: 30%;
+}
+
+.row-2 {
+  height: 30%;
+}
+
+.row-1-color {
+  background-color: brown;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 20px 5px 0 5px;
+  outline: none;
+  border: none;
+}
+
+.row-1-color:active,
+.row-1-color:focus {
+  outline: none;
+  border: none;
+}
+
+.row-2-color {
+  background-color: brown;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 20px 5px 0 5px;
+  outline: none;
+  border: none;
+}
+
+.row-2-color:active,
+.row-2-color:focus {
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,276 @@
+/* From Big tablets to small tablets (From 1201 to 1366px)*/
+@media only screen and (max-width: 1366px) {
+  .flex-container {
+    height: 80%;
+  }
+  .links-container {
+    width: 100%;
+  }
+}
+
+/* From 1024 to 1200px */
+@media only screen and (max-width: 1200px) {
+  .text-box h1 {
+    font-size: 2.8rem;
+  }
+  .text-box h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .section-main-title {
+    font-size: 1rem;
+  }
+  .section-main-subtitle {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  #places-heading-box p {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .title-box h2,
+  .amazing-title-box h2 {
+    font-size: 1.7rem;
+  }
+  .title-box p,
+  .amazing-title-box p {
+    font-size: 0.6rem;
+    line-height: 1.6;
+  }
+  .footer-container li a {
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  .social-links-container {
+    width: 12%;
+  }
+}
+
+/* From 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .navbar {
+    height: 30vh;
+  }
+  .navbar ul {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text-box {
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
+  .text-box h1 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .text-box h3 {
+    font-size: 0.9rem;
+  }
+  .logo-box h3 {
+    font-size: 1rem;
+  }
+  .logo-box i {
+    font-size: 1rem;
+  }
+  .text-box button {
+    width: 120px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 10px;
+  }
+  .section-main-title {
+    font-size: 0.9rem;
+  }
+  .title-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  .title-box h2 {
+    font-size: 1.4rem;
+  }
+  .title-box a {
+    font-size: 0.6rem;
+  }
+  .season-title img {
+    height: 70%;
+  }
+  .links-container {
+    flex-direction: column;
+  }
+  .links-container li a {
+    font-size: 0.6rem;
+  }
+  .amazing-title-box {
+    background: #fff;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    z-index: 1;
+  }
+  .amazing-title-box h2 {
+    font-size: 1.4rem;
+  }
+  .amazing-title-box a {
+    font-size: 0.6rem;
+  }
+  #places-heading-box h2 {
+    font-size: 1rem;
+  }
+  #places-heading-box p {
+    font-size: 0.6rem;
+  }
+}
+
+/* From 481px to 767px */
+@media only screen and (max-width: 767px) {
+  section {
+    height: auto;
+    margin: 50px 0;
+  }
+  header {
+    height: 80vh;
+  }
+  .navbar li a {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+  .text-box h1 {
+    font-size: 1.3rem;
+  }
+  .logo-box h3 {
+    font-size: 0.7rem;
+  }
+  .logo-box i {
+    font-size: 0.7rem;
+  }
+  .text-box h3 {
+    font-size: 0.7rem;
+  }
+  .section-main-heading {
+    font-size: 1.3rem;
+  }
+  .flex-container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .order-box {
+    height: 33.33%;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .order-box img {
+    width: 50%;
+  }
+  .section-main-title {
+    font-size: 1.2rem;
+  }
+  .section-main-subtitle {
+    font-size: 0.8rem;
+  }
+  .title-box {
+    height: 60%;
+    width: 50%;
+  }
+  .title-box h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .title-box p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .season-title img {
+    height: 50%;
+  }
+  .amazing-title-box {
+    width: 90%;
+    top: 25%;
+    left: 5%;
+  }
+  #amazing-product .section-container img {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+  }
+  #places-heading-box {
+    width: 80%;
+    margin-top: 30px;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .social-links-container {
+    width: 40%;
+  }
+  .footer-container h2 {
+    font-size: 1.3rem;
+  }
+  .footer-container h4 {
+    font-size: 0.7rem;
+  }
+}
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .logo-box {
+    display: none;
+  }
+  .text-box {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-main-heading {
+    font-size: 1.1rem;
+  }
+  .section-main-title {
+    font-size: 1rem;
+  }
+  .section-main-subtitle {
+    font-size: 0.6rem;
+  }
+  .section-button {
+    width: 120px;
+    font-size: 0.6rem;
+  }
+  .season-title {
+    position: static;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .season-title img {
+    position: static;
+    width: 80%;
+    height: 35%;
+    margin: 0 auto;
+    border-radius: 3px;
+  }
+  .title-box {
+    position: static;
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  .footer-container h2 {
+    font-size: 1rem;
+  }
+  .footer-container h4 {
+    font-size: 0.6rem;
+  }
+}

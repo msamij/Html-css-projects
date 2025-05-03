@@ -1,0 +1,38 @@
+body {
+  font-family: "Sourcer Sans Pro", sans-serif;
+  color: #1a2733;
+}
+.header {
+  text-align: center;
+  margin: 10 auto;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+}
+.gallery {
+  text-align: center;
+}
+img {
+  max-width: 700px;
+  width: 80%;
+  margin: 10px 20px;
+  border-radius: 10px;
+}
+hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}

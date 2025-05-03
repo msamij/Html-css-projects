@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: rgb(219, 216, 216);
+}
+
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  position: fixed;
+  z-index: 200;
+  display: none;
+  right: 0;
+}
+
+/* Main header box which contains navbar main text and button */
+.main-header {
+  height: 95vh;
+  background: #2a2d36;
+  position: relative;
+}
+
+.main-nav {
+  width: 100vw;
+  padding: 5px;
+  position: fixed;
+  background: #2a2d36;
+  z-index: 100;
+}
+
+.main-nav__items {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toggle-button {
+  width: 2.1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: none;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 90%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.4rem 0;
+}
+
+.main-logo {
+  font-size: 25px;
+}
+
+.main-nav__item__logo a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+.main-nav__button {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background: transparent;
+  padding: 5px;
+  width: 80px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(197, 194, 194);
+}
+
+.main-nav__button:hover,
+.main-nav__button:active,
+.main-nav__button:focus {
+  color: rgba(39, 39, 39, 0.767);
+  background: white;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+}
+
+/* Nav bar links */
+.main-nav__item a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+/* Select every element in navbar except saavn-logo */
+.main-nav__item a:hover:not(.main-logo) {
+  border-top: 2px solid white;
+  color: white;
+  transition: all 0.3s;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  width: 90%;
+  margin: auto;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 201;
+  top: 0;
+  background: #2a2d36;
+  width: 50%;
+  height: 100vh;
+  right: 0;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__button {
+  border: 2px solid #161414;
+  border-radius: 10px;
+  background: transparent;
+  padding: 5px;
+  width: 80px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(197, 194, 194);
+}
+
+.mobile-nav__button:hover,
+.mobile-nav__button:active,
+.mobile-nav__button:focus {
+  color: rgba(39, 39, 39, 0.767);
+  background: white;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+}
+
+.mobile-nav__item a {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.788);
+  text-decoration: none;
+}
+
+.main-nav__item a:hover {
+  border-top: 2px solid white;
+  color: white;
+  transition: all 0.3s;
+}
+
+.text-box {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.text-box h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.text-box h3 {
+  color: rgba(124, 124, 124, 0.658);
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.textbox-button {
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: rgba(36, 32, 32, 0.829);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.textbox-button:hover,
+.textbox-button:active,
+.textbox-button:focus {
+  outline: none;
+  color: rgb(36, 35, 35);
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+/* Main title box which has saavn intro text */
+.main-title {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  margin-bottom: 30px;
+}
+
+.title-box {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.title-box h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #484849;
+}
+
+.title-box h4 {
+  color: #484849;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.title-box p {
+  color: #484849;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Overview box which contains iphone img and title */
+.overview {
+  height: 100vh;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  background: rgb(255, 255, 255);
+}
+
+.overview-main__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.overview-main__box h1 {
+  font-size: 45px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.overview-main__box h4 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.overview-main__box h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.overview-main__box p {
+  font-size: 18px;
+  min-width: 35%;
+  line-height: 25px;
+}
+
+.overview-img {
+  width: 50%;
+  height: 90vh;
+  background: url("./apple-iphone-11-pro-max-pakistan-priceoye-hn0du.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* About us box which contains three white boxes*/
+.about-us {
+  margin-top: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+/* This will style every box */
+.child-box {
+  background: rgb(248, 248, 248);
+  width: 25%;
+  height: 40%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.child-box h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.child-box button {
+  background: transparent;
+  color: rgb(107, 103, 103);
+  font-size: 20px;
+  border-radius: 30px;
+  border: 1px solid rgb(83, 78, 78);
+  padding: 10px;
+  width: 180px;
+  cursor: pointer;
+}
+
+.child-box button:hover,
+.child-box button:active,
+.child-box button:focus {
+  width: 200px;
+  transition: all 0.4s;
+  box-shadow: 1px 1px 10px 0px grey;
+}
+
+footer {
+  background: rgb(39, 49, 56);
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* This box only has footer list items */
+.wrapper {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.logo-box {
+  height: 50%;
+  align-self: center;
+  position: absolute;
+  left: 5%;
+}
+
+.footer-logo {
+  font-size: 25px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+/* This box does not have saavn logo */
+.list-container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+/* This is the box in which contains list items */
+.list-box {
+  height: 60%;
+  width: 40%;
+  padding: 0 15px;
+}
+
+.list-box h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Only style div which has child element */
+.footer-box-brands {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifts {
+  height: 50%;
+}
+
+.box-items {
+  list-style: none;
+}
+
+.box-item {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(175, 174, 174);
+}
+
+.social-links__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 2%;
+}
+
+.social-links__box {
+  height: 100%;
+  min-width: 30%;
+}
+
+.social-links {
+  list-style: none;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0 10px;
+  color: rgb(129, 129, 129);
+}
+
+.copyright {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyright-text {
+  font-size: 14px;
+  color: rgb(129, 129, 129);
+}
+
+/*If is <= 980px */
+@media (max-width: 61.25rem) {
+  .about-us {
+    clip-path: none;
+    flex-direction: column;
+  }
+
+  .child-box {
+    background: white;
+    width: 90%;
+    height: 40%;
+    margin: 10px 0;
+    justify-content: space-evenly;
+  }
+
+  .child-box h2 {
+    font-size: 25px;
+  }
+
+  .child-box p {
+    font-size: 15px;
+  }
+
+  .child-box button {
+    font-size: 10px;
+  }
+}
+
+/*If is <= 971.2px */
+@media (max-width: 60.7rem) {
+  /* Make iphone img section display in coloumn */
+  .overview {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .overview-main__box {
+    width: 100%;
+  }
+
+  .overview-main__box h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .overview-main__box h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .overview-main__box h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .overview-main__box p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .wrapper {
+    justify-content: center;
+  }
+
+  .logo-box {
+    display: none;
+  }
+}
+
+@media (max-width: 645px) {
+  .overview-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 430px) {
+  .overview-img {
+    width: 100%;
+  }
+
+  .title-box {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 560px) {
+  .social-links__container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    align-self: flex-start;
+    justify-content: unset;
+    margin-top: 8px;
+  }
+
+  .copyright-text {
+    font-size: 10px;
+    margin-left: 8px;
+  }
+
+  .social-links li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-nav__items {
+    padding: 0 18px;
+    justify-content: space-between;
+  }
+
+  /* Select every element in navbar except logo and hamburger */
+  .main-nav__item {
+    display: none;
+  }
+
+  .main-nav__item__button button {
+    display: inline-block;
+  }
+
+  .text-box {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text-box h1 {
+    font-size: 30px;
+  }
+
+  .text-box h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .textbox-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .textbox-button:hover {
+    font-size: 20px;
+  }
+}
+@media (max-width: 730px) {
+  footer {
+    background: rgb(39, 49, 56);
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .wrapper {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .list-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .list-box {
+    height: auto;
+    width: auto;
+  }
+
+  .box-items {
+    list-style: none;
+    display: flex;
+    width: 70vw;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .box-item {
+    margin-right: 10px;
+  }
+}
+
+.open {
+  display: block !important;
+}

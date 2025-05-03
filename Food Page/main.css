@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.main-header {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 1;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* The black background will be active when in mobile nav */
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-nav__item {
+  list-style: none;
+  display: inline-block;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0 26px;
+  color: white;
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.main-nav__item a:hover {
+  border-bottom: 2px solid white;
+}
+
+.icon {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 8px 8px;
+}
+
+.icon i {
+  font-size: 30px;
+}
+
+.toggle-button {
+  display: none;
+  width: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 3px;
+  background: white;
+  display: block;
+  margin: 5px 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 50%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 3px 0;
+  font-size: 1.5rem;
+}
+
+.mobile-nav__item a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-box {
+  background: url("./pancakes-2020863_1920.jpg");
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-box--items {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__main-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 15;
+}
+
+.main__sub-text {
+  display: block;
+  margin-top: 15px;
+  letter-spacing: 30px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 20px 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.header__main-button {
+  background: none;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #ffff;
+  padding: 15px;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 4px solid black;
+  outline: none;
+}
+.header__main-button:active,
+.header__main-button:focus,
+.header__main-button:hover {
+  outline: none;
+  border: none;
+  background: black;
+  font-weight: lighter;
+}
+
+main {
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.main__img-box {
+  height: 100%;
+  width: 95%;
+  background: url("./menu/photo-1476224203421-9ac39bcb3327.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.title-desert {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.open {
+  display: block !important;
+}
+
+@media (max-width: 640px) {
+  .main-nav__item {
+    display: none;
+  }
+
+  .toggle-button {
+    display: inline;
+  }
+
+  .header__main-text {
+    font-family: "Dancing Script", cursive;
+    font-size: 25;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10;
+  }
+
+  .main__img-box {
+    height: 50%;
+    width: 95%;
+  }
+
+  .mobile-nav {
+    width: 60%;
+  }
+}

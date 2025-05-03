@@ -1,0 +1,89 @@
+@media (max-width: 1024px) {
+  .card-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+    justify-content: center;
+  }
+  .footer-links-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* From 769 to 900px (Landscape Devices)*/
+@media (max-width: 900px) {
+  .nav-bar li {
+    padding: 0 10px;
+  }
+  .main-header {
+    height: 90vh;
+  }
+  .text-box p {
+    margin-bottom: 15px;
+  }
+  .section-xbox {
+    height: 70vh;
+  }
+}
+
+/* From 482 to 768px */
+@media (max-width: 768px) {
+  .main-header {
+    height: 70vh;
+  }
+  .text-box p {
+    margin-bottom: 20px;
+  }
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+  .footer-links-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-links-container div:nth-child(3),
+  .footer-links-container div:nth-child(4) {
+    display: none;
+  }
+  .footer-links-container li {
+    margin-bottom: 5px;
+  }
+  .copy-right ul {
+    align-items: center;
+  }
+  .copy-right div {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+/* From 0 to 481px */
+@media (max-width: 481px) {
+  .container {
+    max-width: 95%;
+    margin: auto;
+  }
+  .main-header {
+    height: 50vh;
+  }
+  .text-box {
+    width: 90%;
+    margin: auto;
+  }
+  .text-box p {
+    margin-bottom: 10px;
+  }
+  .btn-black {
+    padding: 5px 15px;
+  }
+  .card-box {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+  .section-xbox {
+    height: 50vh;
+  }
+  .xbox-text-box {
+    width: 60%;
+  }
+}

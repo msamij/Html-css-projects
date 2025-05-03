@@ -1,0 +1,25 @@
+body {
+  border: 20px solid #bdc3c7;
+  max-width: 700px;
+  width: 80%;
+  padding: 20px;
+  margin: 20px auto;
+  font-family: 'Sourcer Sans Pro', sans-serif;
+}
+h2 {
+  color: #2c3e50;
+}
+h3 {
+  letter-spacing: 5.5;
+  color: #3498db;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.article-1 p:nth-of-type(1) {
+  border-left: 5px solid #bdc3c7;
+  padding: 5px;
+}
+.article-2 p:nth-of-type(1) {
+  border-left: 3px solid #bdc3c7;
+  padding: 10px;
+}

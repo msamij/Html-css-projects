@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: rgb(27, 27, 27);
+}
+header {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  background: rgb(46, 46, 46);
+}
+.main__header--items {
+  margin: 0 30px;
+  height: 200px;
+}
+.main__header--nav {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  height: 100vh;
+  background: rgb(46, 46, 46);
+}
+.toggle-button {
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 4px;
+  background: white;
+  display: inline-block;
+  margin: 0 0;
+}
+
+.main__header--nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.main__header--nav a:hover,
+.main__header--nav a:active,
+.main__header--nav a:focus {
+  outline: none;
+  background: grey;
+}
+
+.main__header--nav i {
+  display: block;
+  margin: 15px 0 5px 0;
+}
+
+.main__header-logo i {
+  margin: 0 3px;
+  color: red;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.main__header-logo {
+  margin: 10px 15px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+}
+.main__header--search-bar {
+  margin-top: 10px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 30%;
+}
+
+.search-bar {
+  background: black;
+  width: 70%;
+  height: 30px;
+  border: none;
+  padding: 10px;
+}
+.main__header--search-bar-icon {
+  color: black;
+  width: 65px;
+  height: 30px;
+  background: rgb(56, 56, 56);
+  border: none;
+  margin: 0;
+  display: inline-block;
+}
+
+.search-icon-hidden {
+  display: none;
+  color: #ffffff;
+}
+.search-bar::placeholder {
+  color: white;
+}
+
+/* .main__header--nav-expand {
+  list-style: none;
+  display: inline-block;
+}
+
+.main__header--nav-expand-item a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 8px;
+} */
+@media (max-width: 540px) {
+  .main__header--search-bar {
+    display: none;
+  }
+  /* .main__header--search-bar-icon a {
+    color: white;
+    display: inline-block;
+    text-align: right;
+  } */
+  .main__header--nav a {
+    display: none;
+  }
+}
+main {
+  height: 200px;
+  background-color: red;
+}
