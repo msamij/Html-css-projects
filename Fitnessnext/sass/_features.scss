@@ -1,0 +1,65 @@
+.features {
+  padding: 10rem 0;
+  grid-column: center-start / center-end;
+
+  @media only screen and (max-width: $bp-sm) {
+    padding: 4rem 2rem;
+    grid-column: full-start / full-end;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 5rem;
+
+    @media only screen and (max-width: $bp-sm) {
+      grid-gap: 3rem;
+    }
+  }
+}
+
+.feature {
+  height: 25rem;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img--1 {
+    background-image: linear-gradient(#2a2727e7, #2a2727e7),
+      url("../img/feature-1.jfif");
+  }
+  &__img--2 {
+    background-image: linear-gradient(#2a2727e7, #2a2727e7),
+      url("../img/feature-2.jfif");
+  }
+  &__img--3 {
+    background-image: linear-gradient(#2a2727e7, #2a2727e7),
+      url("../img/feature-3.jfif");
+  }
+  &__img--4 {
+    background-image: linear-gradient(#2a2727e7, #2a2727e7),
+      url("../img/feature-4.jfif");
+  }
+  &__img--5 {
+    background-image: linear-gradient(#2a2727e7, #2a2727e7),
+      url("../img/feature-5.jfif");
+  }
+  &__img--6 {
+    background-image: linear-gradient(#2a2727e7, #2a2727e7),
+      url("../img/feature-6.jfif");
+  }
+
+  &__text {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: #fff;
+  }
+}

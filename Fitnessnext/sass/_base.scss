@@ -1,0 +1,46 @@
+$color-primary: #ef233c;
+$color-secondary: #2a2727;
+$color-dark: #aaa;
+$color-light: #f9f9f9;
+
+$font-primary: "Josefin Sans", sans-serif;
+$font-secondary: "Nunito", sans-serif;
+
+$bp-large: 75em; // 1200px
+$bp-md: 62.5em; // 1000px
+$bp-sm: 37.5em; // 600px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 90vh repeat(5, min-content);
+  grid-template-columns:
+    [full-start] minmax(8rem, 1fr) [center-start]
+    repeat(12, [col-start] minmax(min-content, 9rem) [col-end])
+    [center-end] minmax(8rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-md) {
+    grid-template-rows: 90vh min-content repeat(5, min-content);
+  }
+}
