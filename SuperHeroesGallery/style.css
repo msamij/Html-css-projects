@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('https://insomniac.games/wp-content/uploads/2023/07/MSM2_Story_Duo_4k_Legal_2023-scaled.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+.main__heading {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.main__heading span {
+  display: block;
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.col {
+  display: inline-block;
+  margin: 10px;
+  height: 200px;
+  width: 300px;
+}
+
+.col-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.col-caption {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
