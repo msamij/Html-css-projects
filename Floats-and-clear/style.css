@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: paleturquoise;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+.box1 {
+  background-color: limegreen;
+}
+.box2 {
+  background-color: chocolate;
+}
+.box3 {
+  background-color: coral;
+  clear: left;
+}
+.box4 {
+  background-color: brown;
+}
+
+.image-box::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.image-box img {
+  height: 300px;
+  width: 300px;
+  float: right;
+}
