@@ -82,7 +82,7 @@ li a:hover {
 /* SHOWCASE */
 #showcase {
   min-height: 400px;
-  background: url("../img/showcase.jpg") no-repeat;
+  background: url('../img/showcase.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -115,7 +115,7 @@ li a:hover {
   margin-top: 8px;
 }
 
-#newsletter input[type="email"] {
+#newsletter input[type='email'] {
   padding: 4px;
   height: 38px;
   width: 250px;
@@ -189,7 +189,7 @@ footer {
     margin: 0;
   }
 
-  #newsletter form input[type="email"] {
+  #newsletter form input[type='email'] {
     width: 100%;
     margin-bottom: 5px;
   }
